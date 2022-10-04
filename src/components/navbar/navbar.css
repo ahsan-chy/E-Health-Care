@@ -1,0 +1,23 @@
+.main-nav-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:819px) {
+    .main-nav-sec1 {
+        display: none !important;
+    }
+    .main-nav-sec2 {
+        margin-left: auto !important;
+        margin-right:auto !important;
+    }
+}
+@media only screen and (max-width:767px) {
+    .nav-item {
+        text-align: center !important;
+    }
+    .navbar-collapse {
+        text-align: center !important;
+    }
+}

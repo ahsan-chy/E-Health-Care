@@ -1,0 +1,49 @@
+.benefits-text {
+    padding: 60px 20px 30px 90px;
+}
+.top-title {
+    font-size: 15px;
+    color: #ff9600;
+    text-transform: uppercase;
+}
+.section-title {
+    font-size: 36px;
+    color: #0e8a8a;
+    font-weight: 600;
+    font-family: 'Flamante-sten';
+    text-transform: uppercase;
+}
+.benefits-text h4 {
+    font-size: 15px;
+    font-family: 'Flamante-sten';
+    color: #0e8a8a;
+}
+.benefits-text .para-text {
+    font-size: 12px;
+    line-height: 20px;
+}
+.benefits-text h4::before {
+    content: "‎✔";
+    background-color: rgb(255, 150, 0);
+    color: rgb(255, 255, 255);
+    margin-right: 6px;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+.bene-img {
+    height: 100%;
+}
+.bene-img img {
+    width: 70%;
+    height: 100%;
+}
+@media only screen and (max-width: 991.98px)
+    {.section-title {
+    font-size: 26px;
+    }
+}
+@media only screen and (max-width: 1399px)
+    {.section-title {
+    font-size: 25px;
+    }
+}

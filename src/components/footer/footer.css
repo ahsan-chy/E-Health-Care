@@ -1,0 +1,16 @@
+.footer-logo{
+
+    width: 170px;
+}
+.footer{
+background-color: #0e8a8a;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px !important;
+}
+

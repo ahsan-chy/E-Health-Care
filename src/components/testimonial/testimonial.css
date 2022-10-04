@@ -1,0 +1,70 @@
+.section-heading-title {
+    font-size: 32px;
+    color: #0e8a8a;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.section-header .sub-title {
+    color: #757575;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 15px auto 0;
+}
+.testimonial-item .testimonial-img img {
+    border-radius: 50%;
+}
+.testimonial-item .testimonial-content {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px 5px #e5f1fb;
+    border-radius: 8px;
+    padding: 20px;
+    padding-top: 90px;
+    margin-top: -100px;
+}
+.testimonial-item .testimonial-img {
+    width: 115px !important;
+    height: 115px !important;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.user-name{
+    color: #0E8A8A;
+}
+.testimonial-content{
+    font-size: 14px;
+}
+
+/* Swiper Styling */
+/* .swiper {
+    width: 100%;
+    height: 100%;
+  } */
+  
+  /* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff; */
+  
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  } */
+  
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */

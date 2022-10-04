@@ -1,0 +1,128 @@
+.about-banner{
+    background-image: url('/public/images/aboutdr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    min-height: 700px;
+}
+.green-btn{
+    background-color:#0E8A8A;
+}
+
+.green-btn:hover{
+    background-color:#fff;
+    color: #0E8A8A !important;
+    border: 1px solid #0E8A8A;
+}
+.aboutdr-img{
+    height: auto;
+    width: 100%;
+}
+.clear-section{
+    clear: both;
+}
+.category-subox{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px 5px #e5f1fb;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    overflow: hidden;
+    width: 90%;
+    margin: -100px auto 100px;
+}
+.category-subox>h4{
+    color: #0E8A8A;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.category-subox>p{
+    font-size: 16px;
+    color: #363636;
+}
+.subox-img{
+    position: relative;
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    
+}
+.subox-img .subox-circle{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0px 4px 5px 5px #e5f1fb;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    
+}
+.subox-img .subox-circle .icon-img{
+    /* position: absolute;
+    left: 50%;
+    top: 46%;
+    font-size: 40px;
+    color: #0E8A8A;
+    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -30%); */
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    color: #0E8A8A;
+    font-size: 40px;
+    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    
+}
+.category-col{
+    position: relative;
+}
+.category-col::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 85px;
+    width: 150px;
+    height: 26px;
+    background-color: #fff;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border-radius: 10px 10px;}
+
+
+.testimonial>h2{
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #363636;
+}
+.testimonial>p{
+    color: #63636D;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 15px auto 0;
+}
+.patient-record{
+    background-color: #0e8a8a
+}
+.under-lay{
+    background-image: url('/public/images/feature-box-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
