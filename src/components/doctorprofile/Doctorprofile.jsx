@@ -88,7 +88,7 @@ const Doctorprofile = ({drDetails}) => {
           </div>
 
           {/* Doctor Details */}
-          <div className="row mb-4 px-2 pb-2 border shadow-sm rounded">
+          <div className="row mb-4 px-2 pb-2 border shadow-sm rounded btm-nav">
            <nav>
             <div className="nav nav-tabs nav-tabs-bottom nav-justified " id="nav-tab" role="tablist">
               <button className="nav-link active text-dark" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</button>

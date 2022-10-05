@@ -72,22 +72,20 @@
     padding: 2px 12px;
     margin-right: 8px
 }
-.nav-link.active{
+.btm-nav .nav-link.active{
     color: #ff9600 !important;
     border-color: #dee2e600 #dee2e600 rgba(255, 255, 255, 0) !important;
     border-bottom: 3px solid #ff9600 !important;
     background-color: rgba(255, 255, 255, 0) !important;
 }
-.nav-link:hover{
+.btm-nav .nav-link:hover{
     background-color: #eee !important;
     color: #63636D !important;
-
-    
 }
-.nav-link.active:hover{
+.btm-nav .nav-link.active:hover{
     color: #ff9600 !important;
     background-color:transparent !important;
 }
-.nav-link{
+.btm-nav .nav-link{
     color:#63636D
 }

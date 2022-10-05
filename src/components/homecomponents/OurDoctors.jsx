@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { getDoctors } from '../../services/doctorsApi';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 const axios = require('axios').default;
 
 const OurDoctors = () => {
@@ -31,12 +39,43 @@ useEffect( ()=>{
 // })}, [])
 
 return (
-    <div className='container my-5 text-center'>
+    <div className='container-fluid my-5 px-4 text-center'>
         <h2 style={{color:"#0E8A8A"}}>Our Doctors</h2>
-      <div className="row row-cols-1 row-cols-md-3 g-3 mt-3">
+      <div className="row mt-3">
+      <Swiper
+        // slidesPerView={4}
+        // spaceBetween={3}
+        // slidesPerGroup={4}
+        loop={true}
+        // loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          0:{
+            slidesPerView:1
+          },
+          600:{
+            slidesPerView:2
+          },
+          850:{
+            slidesPerView:3
+          },
+          1150:{
+            slidesPerView:4
+          },
+          1700:{
+            slidesPerView:5
+          },
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper px-4 pb-3 pt-2"
+        >
         {
-        doctors.slice(1,5).map(d=>(
-          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-2 " key={d.doctorId}>
+        doctors.map(d=>(
+          <SwiperSlide>
+          <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 px-2 " key={d.doctorId}>
             <div className="card h-100 shadow-sm bg-body py-1">
               <div style={{width:'100%', height: '190px', margin:'1px 0'}}>
               <img src={d.picture} alt="" className="card-img-top pt-3" style={{width:'auto', height:'100%'}}/>
@@ -54,8 +93,10 @@ return (
               </div>
             </div>
           </div>
+          </SwiperSlide>
         ))
       }
+      </Swiper>
       </div>  
     </div>
   )

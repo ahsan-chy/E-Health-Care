@@ -21,3 +21,21 @@
         text-align: center !important;
     }
 }
+
+.top-nav .nav-link.active{
+    color: #ff9600 !important;
+    border-color: #dee2e600 #dee2e600 rgba(255, 255, 255, 0) !important;
+    border-bottom: 3px solid #ff9600 !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+.top-nav .nav-link:hover{
+    background-color: rgba(107, 89, 89, 0) !important;
+    color: #ff9600 !important;
+}
+.top-nav .nav-link.active:hover{
+    color: #ff9600 !important;
+    background-color:transparent !important;
+}
+.top-nav .nav-link{
+    color:#63636D
+}

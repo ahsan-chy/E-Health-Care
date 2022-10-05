@@ -7,8 +7,8 @@ const greenColor = {
 const HealthCare = () => {
   return (
     <div className='mb-4 text-white' style={greenColor}>
-        <div className="row py-4">
-            <div className="col-md-9">
+        <div className="row py-4 find-section">
+            <div className="col-md-9 card-section">
                 <div className="row ps-5">
                     <div className="col-md-2 ps-5">
                         <img src="/images/24-hours-supports.png" alt=""  style={{width:'80px'}}/>
@@ -19,7 +19,7 @@ const HealthCare = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-md-3 py-3 ps-5">
+            <div className="col-md-3 py-3 ps-5 card-section">
                 <button className="btn btn-light rounded-pill px-4 py-2 border border-light" style={{color: "#0E8A8A"}}>Find Doctor</button>
             </div>
         </div>

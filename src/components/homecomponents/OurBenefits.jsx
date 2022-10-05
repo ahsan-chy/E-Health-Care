@@ -1,5 +1,5 @@
 import React from 'react'
-import './ourbenefits.css'
+import './home.css'
 
 const OurBenefits = () => {
   return (
@@ -7,9 +7,11 @@ const OurBenefits = () => {
         <section className="our-benefits">
         <div className="row m-0">
           <div className="col-md-12 col-lg-6 benefits-text">
-            <h3 className="top-title">Our Benefits</h3>
-            <h2 className="section-title">Choose Our Physcatrist Treatment for Your Solutions</h2>
-            <p className="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+            <div className='benefit-top'>
+              <h3 className="top-title">Our Benefits</h3>
+              <h2 className="section-title">Choose Our Physcatrist Treatment for Your Solutions</h2>
+              <p className="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+            </div>
             <div className="row">
               <div className="col-md-6 mb-3">
                 <h4>BEST PROCEDURES</h4>
