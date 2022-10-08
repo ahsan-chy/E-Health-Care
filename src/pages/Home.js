@@ -26,7 +26,6 @@ function Home() {
       <OurBenefits />
       <OurDoctors />
       <HealthCare />
-      {/* <BeHealthy /> */}
       <Testimonial/>
       
 

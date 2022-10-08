@@ -1,10 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { Link, NavLink } from 'react-router-dom';
+import { FaMapMarkerAlt, FaInstagram, FaPhoneAlt, FaTwitter, FaFacebook } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import './navbar.css';
 import { useState } from 'react';
 
@@ -14,7 +11,6 @@ let mainMenu ={
 }
 
 function Navbar() {
-    const [toogleState, setToogleState] = useState(1)
 
   return (
     <div>
@@ -39,31 +35,28 @@ function Navbar() {
       </div>
 
        {/* Main Menu */}
-        <nav className="navbar navbar-expand-md navbar-light bg-light shadow-sm">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-md shadow-sm">
+            <div className="container-fluid header-bar">
 
                 <Link className="navbar-brand mx-3" to="/">
                     <img src="/images/hospital.png" alt="hospital" style={{width:'120px'}}/>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <GiHamburgerMenu/>
                 </button>
                 <div className="collapse navbar-collapse top-nav" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item ">
-                        <Link className={ toogleState===1 ? "nav-link text-success active": "nav-link"} onClick={()=>setToogleState(1)} to="/">Home</Link>
+                        <NavLink  className="nav-link nav-button" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link className={ toogleState===2 ? "nav-link text-success active": "nav-link"} onClick={()=>setToogleState(2)} to="/Doctor">Search Doctors</Link>
-                    </li>
-                    {/* <li className="nav-item">
-                        <Link className="nav-link" style={mainMenu} to="/DrProfile">Doctor Profile</Link>
-                    </li> */}
-                    <li className="nav-item">
-                        <Link className={ toogleState===3 ? "nav-link text-success active": "nav-link"} onClick={()=>setToogleState(3)}  to="/AboutUs">About Us</Link>
+                        <NavLink  className="nav-link nav-button" to="/Doctor">Search Doctors</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link className={ toogleState===4 ? "nav-link text-success active": "nav-link"} onClick={()=>setToogleState(4)}  to="/ContactUs">Contact Us</Link>
+                        <NavLink  className="nav-link nav-button" to="/AboutUs">About Us</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink  className="nav-link nav-button" to="/ContactUs">Contact Us</NavLink>
                     </li>
                 </ul>
                     

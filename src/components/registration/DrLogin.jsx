@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { RiGoogleFill, RiFacebookFill } from "react-icons/ri";
+import "./form.css"
 
 const DrLogin = () => {
 const { register, handleSubmit, formState: { errors } } = useForm();
@@ -21,9 +22,14 @@ console.log(errors);
             <div className="container col-md-6">
             <div className="mt-5">
                 <div className="card px-4 py-3 w-75 mx-auto  shadow-sm">
-                    <div className="row py-1 mb-4 text-center">
-                        <h3 className=" text-center" style={{color:'#0E8A8A'}}>Login</h3>
+                <div className="row py-1 mb-4 text-center">
+                    <div className="col-md-6">
+                        <h4 className=" text-start" style={{color:'#0E8A8A'}}>Dr Login</h4>
                     </div>
+                    <div className="col-md-6 pt-2 pe-1">
+                        <h6 className=" text-end"><Link className=" text-decoration-none" to="/PatientsLogin"  style={{color:'#ff9600'}}>Login as Patient ?</Link></h6>
+                    </div>
+                </div>
                     <form onSubmit={handleSubmit(onSubmit)} className="row needs-validation" noValidate>
 
                     <div className="row px-1 mt-1">

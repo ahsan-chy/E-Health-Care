@@ -1,0 +1,29 @@
+.error-box {
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 4.5rem 0;
+    text-align: center;
+    width: 100%;
+}
+.error-box h1{
+    color: var(--green-clr);
+    font-size: 10em;
+}
+.error-box>p{
+    margin-bottom: 1.875rem;
+    font-size: 23px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.error-box .filled-btn {
+    background-color: #ff9600;
+    border: 1px solid#ff9600;
+    border-radius: 30px;
+    color: #fff!important;
+    padding: 12px 30px 9px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.warning-icon{
+    margin-top: -5px;
+}

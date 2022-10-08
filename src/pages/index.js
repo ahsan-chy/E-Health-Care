@@ -7,4 +7,5 @@ export {default as DrProfile} from './DrProfile';
 export {default as Doctor} from './Doctor';
 export {default as ContactUs} from './ContactUs';
 export {default as AboutUs} from './AboutUs';
-export {default as DrDashboard} from './DrDashboard';
+export {default as ErrorPage} from './ErrorPage';
+export {default as ServerError} from './ServerError';

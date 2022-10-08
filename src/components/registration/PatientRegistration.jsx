@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { RiGoogleFill, RiFacebookFill } from "react-icons/ri";
+import "./form.css"
 
 const PatientRegistration = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();

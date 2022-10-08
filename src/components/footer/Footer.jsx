@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.css'
 import { FaAngleRight , FaMapMarkerAlt,FaEnvelope,FaMobileAlt} from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -30,19 +31,16 @@ const Footer = () => {
                 {/* Links */}
                 <h6 className="text-uppercase fw-bold mb-4">For Docters </h6>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Appointments</a>
+                  <FaAngleRight/><Link to="/" className="text-reset">Appointments</Link>
                 </p>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Chat</a>
+                  <FaAngleRight/><Link to="/DrsLogin" className="text-reset">Login</Link>
                 </p>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Login</a>
+                  <FaAngleRight/><Link to="/DrsRegistration" className="text-reset">Register</Link>
                 </p>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Register</a>
-                </p>
-                <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Docter Dashboard</a>
+                  <FaAngleRight/><Link to="/DoctorDashboard/dashboard" className="text-reset">Docter Dashboard</Link>
                 </p>
               </div>
               {/* Grid column */}
@@ -60,9 +58,6 @@ const Footer = () => {
                 </p>
                 <p>
                   <FaAngleRight/><a href="#!" className="text-reset">Register</a>
-                </p>
-                <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Booking</a>
                 </p>
                 <p>
                   <FaAngleRight/><a href="#!" className="text-reset">Patient Dashboard</a>
