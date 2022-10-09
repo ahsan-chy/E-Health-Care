@@ -1,12 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import './home.css'
 
-const greenColor = {
-    backgroundColor:"#0E8A8A"
-}
 
 const HealthCare = () => {
   return (
-    <div className='mb-4 text-white' style={greenColor}>
+    <div className='mb-4 text-white health-sec'>
         <div className="row py-4 find-section">
             <div className="col-md-9 card-section">
                 <div className="row ps-5">
@@ -20,7 +19,9 @@ const HealthCare = () => {
                 </div>
             </div>
             <div className="col-md-3 py-3 ps-5 card-section">
-                <button className="btn btn-light rounded-pill px-4 py-2 border border-light" style={{color: "#0E8A8A"}}>Find Doctor</button>
+                <button className="btn">
+                    <Link className="find-btn" to="/Doctor">Find Doctor</Link>
+                </button>
             </div>
         </div>
     </div>

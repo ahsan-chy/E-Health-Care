@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css'
-import { FaAngleRight , FaMapMarkerAlt,FaEnvelope,FaMobileAlt} from "react-icons/fa";
+import { FaAngleRight , FaMapMarkerAlt, FaEnvelope, FaMobileAlt} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -73,7 +73,7 @@ const Footer = () => {
                   <FaEnvelope /> &nbsp; 
                   mvirtualhospital@gmail.com
                 </p>
-                <p><FaMobileAlt/> &nbsp;  + 92 346 567 88</p>
+                <p><FaMobileAlt/> &nbsp;  +923 146 604 298</p>
               </div>
               {/* Grid column */}
             </div>

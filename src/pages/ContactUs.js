@@ -1,4 +1,5 @@
 import React from 'react'
+import { ContactForm } from '../components'
 
 const ContactUs = () => {
   return (
@@ -7,8 +8,8 @@ const ContactUs = () => {
           <p>Home <span style={{color:"#ff9600"}}>/ Contact Us</span> </p>
           <h4 className='text-secondary'>Contact Us</h4>
         </div>
-        <div className='container w-100 '>
-            
+        <div className=' w-100 '>
+            <ContactForm/>
         </div>
     </div>
   )

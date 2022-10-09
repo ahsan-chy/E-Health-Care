@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 import { FaMapMarkerAlt, FaInstagram, FaPhoneAlt, FaTwitter, FaFacebook } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import './navbar.css';
@@ -47,7 +47,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse top-nav" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item ">
-                        <NavLink  className="nav-link nav-button" to="/">Home</NavLink>
+                        <NavLink  className="nav-link nav-button" to="/" end>Home</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink  className="nav-link nav-button" to="/Doctor">Search Doctors</NavLink>
@@ -58,6 +58,7 @@ function Navbar() {
                     <li className="nav-item">
                         <NavLink  className="nav-link nav-button" to="/ContactUs">Contact Us</NavLink>
                     </li>
+                    
                 </ul>
                     
                 <Link className=" text-decoration-none" to="/PatientsRegistration">
@@ -68,6 +69,7 @@ function Navbar() {
                 </div>
             </div>
             </nav>
+            
     </div>
   )
 }

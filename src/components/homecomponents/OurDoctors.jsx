@@ -8,6 +8,7 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Link } from 'react-router-dom';
 
 const axios = require('axios').default;
 
@@ -89,7 +90,11 @@ return (
                   &nbsp;&nbsp; Ratings 
                   </span>
                 </p>
-                <button type="button" className="btn rounded-pill px-3" style={{color:'#0E8A8A' ,border:"1px solid #0E8A8A"}}>{" "}Book Appointent{" "}</button>
+                <div className='main-btn'>
+                  <button type="button" className="btn book-btn">
+                    <Link to ={`/DrProfile/${d._id}`} className='btn-link'>{" "}Book Appointent{" "}</Link>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -11,8 +11,8 @@ import DoctorDashboard from "../components/DoctorDashboard/pages/DoctorDashboard
 const Routers = () => {
   return (
     <div>
-        <Navbar/>
         <ScrollToTop />
+        <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/Doctor" element={<Doctor />} />
@@ -36,7 +36,6 @@ const Routers = () => {
           <Route path="profileediting" element={<ProfileEditing/>}/>
           <Route path="changepassword" element={<ChangePassword/>}/>
         </Route>
-
 
       </Routes>
     <Footer/>

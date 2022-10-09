@@ -81,11 +81,11 @@ function DoctorCard({doctors}) {
 
                     {/* ------- Collumn 2 (Buttons) ------ */}
                     <div className="col-4 pt-1 pb-1">
-                    <div className='d-grid gap-1 mx-5'>
+                    <div className='d-grid gap-1 mx-5 buttons'>
                         <button className='btn my-3 white-btn'>
-                            <Link to ={`/DrProfile/${doc._id}`} className='btn-text'>View Profile</Link>
+                            <Link to ={`/DrProfile/${doc._id}`} className='btn-link'>View Profile</Link>
                         </button>
-                        <button className='btn text-white' style={{backgroundColor:"#0E8A8A"}}>Book Appointement</button>
+                        <button className='btn text-white green-btn' >Book Appointement</button>
                     
                     </div>
 

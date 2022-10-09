@@ -6,13 +6,13 @@ import { getDoctors } from '../services/doctorsApi';
 const SearchDoctor = () => {
   let [doctors, setDoctors] = useState([]);
   
-  const calldoctorapi = async() => {
+  const callDoctorApi = async() => {
     let res = await getDoctors();
     // console.log("Response data",res);
     setDoctors(res)
   }
   useEffect( ()=>{
-    calldoctorapi()
+    callDoctorApi()
   },[])
     // let rDoctors =getDoctors()
     // console.log(rDoctors)

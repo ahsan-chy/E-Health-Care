@@ -11,47 +11,77 @@
 }
 .hero-text .top-title {
     font-size: 18px;
-    color: #ff9600;
+    color: var(--orange-clr);
     text-transform: uppercase;
 }
 .hero-text h4 {
     font-size: 15px;
     font-family: 'Noto Sans', sans-serif;
-    color: #0e8a8a;
+    color: var(--green-clr);
 }
 .hero-text .section-title {
     font-size: 38px;
-    color: #0e8a8a;
+    color: var(--green-clr);
     font-weight: 600;
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
     margin: 20px 0;
 }
 .heading {
-    color: #ff9600;   
+    color: var(--orange-clr);   
 }
 .hero-text .para-text {
     font-size: 12px;
     line-height: 20px;
 }
 .filled-btn{
-    background-color: #ff9600;
-    border: 1px solid#ff9600;
+    background-color: var(--orange-clr);
+    border: 1px solid var(--orange-clr);
     border-radius: 5px;
     color: #fff!important;
     padding: 12px 30px 9px;
     font-weight: 600;
     font-size: 14px;
 }
+.filled-btn:hover{
+    background-color: #fff;
+    color: var(--orange-clr) !important;
+}
 .outline-btn{
-    border: 1px solid#ff9600;
+    border: 1px solid var(--orange-clr);
     border-radius: 5px;
-    color: #ff9600 !important;
+    color: var(--orange-clr) !important;
     padding: 12px 30px 9px;
     font-weight: 600;
     font-size: 14px;
     margin-left: 24px;
 }
+.outline-btn:hover{
+    background-color: var(--orange-clr);
+    color: #fff !important;
+}
+
+/* Health Card */
+.health-sec{
+    background-color: var(--green-clr);
+}
+.card-section .btn .find-btn{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    display: block;
+    padding: 0.575rem 1.55rem;
+    background-color: transparent;
+}
+.card-section .btn .filled-btn:hover{
+    /* color: var(--green-clr); */
+    background-color: #fff !important;
+    color: var(--green-clr) !important;
+
+}
+
+
 @media only screen and (max-width:414px) {
     .hero-text {
         text-align: center;
@@ -62,9 +92,24 @@
     }
     .hero-text .section-title {
         font-size: 32px;
-    }
-    
+    }   
 }
+/* Our Doctors */
+.main-btn .book-btn .btn-link{
+    color:var(--green-clr);
+    border:1px solid var(--green-clr);
+    border-radius: 50px;
+    text-decoration: none;
+    display: block;
+    padding: 0.375rem 0.95rem;
+}
+.main-btn .book-btn .btn-link:hover{
+    background-color: var(--green-clr);
+    color: #fff;
+}
+
+
+
 /* Our Services */
 .main-heading{
     color: var(--green-clr);
@@ -78,12 +123,12 @@
 }
 .benefits-text .top-title {
     font-size: 15px;
-    color: #ff9600;
+    color: var(--orange-clr);
     text-transform: uppercase;
 }
 .benefits-text .section-title {
     font-size: 36px;
-    color: #0e8a8a;
+    color: var(--green-clr);
     font-weight: 600;
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
@@ -91,7 +136,7 @@
 .benefits-text h4 {
     font-size: 15px;
     font-family: 'Noto Sans', sans-serif;
-    color: #0e8a8a;
+    color: var(--green-clr);
 }
 .benefits-text .para-text {
     font-size: 12px;

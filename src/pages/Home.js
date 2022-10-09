@@ -20,7 +20,6 @@ function Home() {
 
   return (
     <div >
-      {/* <Hero/> */}
       <HeroSection/>
       <Ourservices />
       <OurBenefits />

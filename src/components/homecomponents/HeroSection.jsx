@@ -11,8 +11,8 @@ const HeroSection = () => {
             <h4 className="top-title">Easy way to connect Doctor</h4>
             <h2 className="section-title"><span className='heading'>Connect</span> with our best doctors at your <span className='heading'>home</span></h2>
             <p className="mt-4 mb-5">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-            <Link className="filled-btn" to="/">Find Doctor</Link>
-            <Link className="outline-btn" to="/">Contact Us</Link>
+            <Link className="filled-btn" to="/Doctor">Find Doctor</Link>
+            <Link className="outline-btn" to="/ContactUs">Contact Us</Link>
           </div>
           <div className="col-md-12 col-lg-7 p-0">
             <div className="hero-img">
