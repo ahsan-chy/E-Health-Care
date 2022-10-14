@@ -75,7 +75,6 @@
     background-color: transparent;
 }
 .card-section .btn .filled-btn:hover{
-    /* color: var(--green-clr); */
     background-color: #fff !important;
     color: var(--green-clr) !important;
 

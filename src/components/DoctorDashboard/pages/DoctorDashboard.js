@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { SideNav} from '../components'
+import { SideNav} from '../components';
+import '../components/docterdashboard.css'
 
 
 const DoctorDashboard = () => {
@@ -41,7 +42,7 @@ const DoctorDashboard = () => {
           </div>
 
           {/*  inside Doctor Dashboard Components*/}
-          <div className="col-md-9 px-3">
+          <div className="col-md-9 right-tab">
             <div class="tab-content">
                 
             <Outlet />

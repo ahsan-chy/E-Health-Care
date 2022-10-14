@@ -15,9 +15,6 @@
     color: var(--black-clr);
     max-width: 710px;
     margin: 0 auto;
-}
-
-p {
     font-size: 14px;
     line-height: 22px;
 }
@@ -71,9 +68,6 @@ p {
     color: var(--black-clr);
     max-width: 710px;
     margin: 0 auto;
-}
-
-p {
     font-size: 14px;
     line-height: 22px;
 }

@@ -6,6 +6,8 @@ import { AboutUs, ContactUs, Doctor, DrDashboard, DrProfile, DrsLogin, DrsRegist
 import ScrollToTop from "../components/ScrollToTop";
 import {Appointments, ChangePassword, Dashboard, Invoice, MyPatients, ProfileEditing, Reviews, ScheduleMeeting } from "../components/DoctorDashboard/components";
 import DoctorDashboard from "../components/DoctorDashboard/pages/DoctorDashboard";
+import Review from "../components/reviews/Review";
+import Prescription from "../components/presription/Prescription";
 
 
 const Routers = () => {
@@ -26,6 +28,7 @@ const Routers = () => {
         <Route path="/servererror" element={<ServerError />} />
         <Route path="*" element={<ErrorPage />} />
         
+        {/* Doctor's Routes */}
         <Route path="/DoctorDashboard/" element={<DoctorDashboard />}>
           <Route path="dashboard" element={<Dashboard/>}/>
           <Route path="appointments" element={<Appointments/>}/>
@@ -36,6 +39,11 @@ const Routers = () => {
           <Route path="profileediting" element={<ProfileEditing/>}/>
           <Route path="changepassword" element={<ChangePassword/>}/>
         </Route>
+
+        {/* Patient's Routes */}
+        
+        <Route path="/sendreview" element={<Review />} />
+        <Route path="/prescription" element={<Prescription/>} />
 
       </Routes>
     <Footer/>

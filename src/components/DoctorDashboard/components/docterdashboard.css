@@ -58,14 +58,15 @@ width: 100% !important;
 }
 
 .my-side-nav .nav-link.active{
-    background-color: transparent !important;
+    background-color: #FFF !important;
     color:var(--orange-clr) !important;
+    font-size: 15px !important;
 }
 .my-side-nav .nav-link{
     border-bottom: 1px solid #f0f0f0;
     color:var(--gray-clr);
     display: block;
-    padding: 15px 18px;
+    padding: 16px 18px;
     font-weight: 600;
     text-align: left !important;
     font-size: 14px;
@@ -694,3 +695,73 @@ p {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }}
+
+/* Profile Editing */
+.profile-edit-tab{
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem 2.5rem ;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.025)!important;
+}
+.basic-info .input-sec-1{
+    padding-right: 6px ;
+}
+.basic-info .input-sec-2{
+    padding-left: 6px ;
+}
+.bio .head-text{
+    font-weight: 600;
+    color: var(--green-clr);
+}
+.bio .head-text span{
+    color: var(--orange-clr);
+}
+@media only screen and (max-width: 770){
+    .basic-info>.input-sec-1{
+        padding: 0 !important;
+    }
+    .basic-info .input-sec-2{
+        padding: 0 !important;
+    }
+}
+/* Change Password */
+.right-tab{
+    padding: 0 15px;
+}
+@media only screen and (max-width: 768px){
+    .right-tab{
+        padding: 0 4px;
+    }
+}
+.input-sec{
+    margin-top: 20px;
+}
+.input-sec label{
+    color: var(--green-clr);
+}
+
+.password-tab{
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem 2.5rem ;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.confirm-btn button{
+    margin-top: 30px !important;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    min-width: 120px;
+    background-color: var(--green-clr);
+    color: #fff;
+}
+.confirm-btn button:hover{
+    color: #fff;
+    background-color: var(--dark-green-clr) !important;
+}
