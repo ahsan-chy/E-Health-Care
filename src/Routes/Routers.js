@@ -8,6 +8,9 @@ import {Appointments, ChangePassword, Dashboard, Invoice, MyPatients, ProfileEdi
 import DoctorDashboard from "../components/DoctorDashboard/pages/DoctorDashboard";
 import Review from "../components/reviews/Review";
 import Prescription from "../components/presription/Prescription";
+import Booking from "../components/booking/Booking";
+import Checkout from "../components/checkout/Checkout";
+import Success from "../components/success/Success";
 
 
 const Routers = () => {
@@ -26,6 +29,9 @@ const Routers = () => {
         <Route path="/DrsLogin" element={<DrsLogin />} />
         <Route path="/PatientsLogin" element={<PatientsLogin />} />
         <Route path="/servererror" element={<ServerError />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/success" element={<Success />} />
         <Route path="*" element={<ErrorPage />} />
         
         {/* Doctor's Routes */}

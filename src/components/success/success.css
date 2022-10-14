@@ -1,0 +1,55 @@
+.success-card .card-body {
+    padding: 50px 20px;
+}
+.success-cont {
+    text-align: center;
+}
+.success-cont .i {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 2px solid#ff9600;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    font-size: 10px;
+    margin-bottom: 30px;
+    background-color: #ff9600;
+    padding: 15px;
+
+}
+.success-cont h3 {
+    font-size: 24px;
+}
+.success-cont p {
+    margin-bottom: 30px;
+}
+p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.view-inv-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+}
+.btn-primary {
+    background-color: #ff9600;
+    border: 1px solid#ff9600;
+    border-radius: 8px;
+    color: #fff!important;
+    padding: 12px 30px 9px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+    background-color: #23837a;
+    border: 1px solid #23837a;
+}

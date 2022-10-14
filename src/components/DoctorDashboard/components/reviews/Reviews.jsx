@@ -44,32 +44,6 @@ const Reviews = () => {
                           </div>
                         </div>
                       </div>
-                      <ul class="comments-reply">
-                        <li>
-                          <div class="comment">
-                          <img class="avatar rounded-circle" alt="User Image" src="/images/patient4.jpg" />
-                            <div class="comment-body">
-                              <div class="meta-data">
-                                <span class="comment-author">Dr. Mary Nielson</span>
-                                <span class="comment-date">Reviewed 3 Days ago</span>
-                              </div>
-                              <p class="comment-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam.
-                                Curabitur non nulla sit amet nisl tempus
-                              </p>
-                              <div class="comment-reply">
-                                <a class="comment-btn" href="#">
-                                <FaReply/> Reply
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-
-                      </ul>
-
                     </li>
                   </ul>
                 </div>

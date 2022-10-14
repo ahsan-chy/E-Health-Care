@@ -215,7 +215,10 @@ table.table td, table.table th {
 .card-table .table tr td:first-child, .card-table .table tr th:first-child {
     padding-left: 1.5rem;
 }
-
+.patients-card .card{
+    margin-left:0;
+    margin-right: 0;
+}
 .card-table .table td, .card-table .table th {
     border-top: 1px solid #e2e5e8;
     padding: 1rem 0.75rem;
@@ -620,11 +623,7 @@ p {
     right: 0;
     width: auto;
 }
-.review-listing > ul li .comments-reply {
-    list-style: none;
-    margin-left: 65px;
-    padding: 0;
-}
+
 .review-listing > ul li .comment .comment-body .comment-content {
     color: var(--gray-clr);
     margin-top: 15px;

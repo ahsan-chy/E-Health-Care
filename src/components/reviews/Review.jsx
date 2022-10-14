@@ -33,11 +33,6 @@ const Review = () => {
       console.log(review)
   
 }
- 
-//  const getReviews = async() =>{
-//     const res = await axios.get("http://localhost:5501/api/reviews")
-//     .then(respose=> setReview(respose.data))
-// }
 
 useEffect(()=>{
     // getReviews()
