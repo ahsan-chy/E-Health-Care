@@ -17,7 +17,7 @@ const Dashboard = () => {
                           </div>
                           <div class="dash-widget-info">
                             <h6>Total Patient</h6>
-                            <h3>1500</h3>
+                            <h3>50</h3>
                             <p class="text-muted">Till Today</p>
                           </div>
                         </div>
@@ -31,7 +31,7 @@ const Dashboard = () => {
                           </div>
                           <div class="dash-widget-info">
                             <h6>Today Patient</h6>
-                            <h3>160</h3>
+                            <h3>3</h3>
                             <p class="text-muted">06, Sep 2022</p>
                           </div>
                         </div>
@@ -45,7 +45,7 @@ const Dashboard = () => {
                           </div>
                           <div class="dash-widget-info">
                             <h6>Appoinments</h6>
-                            <h3>85</h3>
+                            <h3>3</h3>
                             <p class="text-muted">06, Apr 2022</p>
                           </div>
                         </div>

@@ -11,6 +11,8 @@ import Prescription from "../components/presription/Prescription";
 import Booking from "../components/booking/Booking";
 import Checkout from "../components/checkout/Checkout";
 import Success from "../components/success/Success";
+import PatientDashboard from "../components/PatientDashboard/pages/PatientDashboard";
+import {Favourites, Patient, PatientChangePassword, PatientProfileEditing, } from "../components/PatientDashboard/components";
 
 
 const Routers = () => {
@@ -47,9 +49,16 @@ const Routers = () => {
         </Route>
 
         {/* Patient's Routes */}
+        <Route path="/PatientDashboard/" element={<PatientDashboard />}>
+          <Route path="patient" element={<Patient/>}/>
+        <Route path="favourites" element={<Favourites/>} />
+          <Route path="patientprofileedit" element={<PatientProfileEditing/>}/>
+          <Route path="patientchangepassword" element={<PatientChangePassword/>}/>
+        </Route>
         
         <Route path="/sendreview" element={<Review />} />
         <Route path="/prescription" element={<Prescription/>} />
+
 
       </Routes>
     <Footer/>

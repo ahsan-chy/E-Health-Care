@@ -19,9 +19,10 @@ const Reviews = () => {
                               <FaStar class="filled"/> 
                               <FaStar class="filled"/> 
                               <FaStar class="filled"/> 
+                              <FaStar class="filled"/> 
                             </div>
                           </div>
-                          <p class="recommended"><i class="far fa-thumbs-up"></i> <FaRegThumbsUp/> I recommend the doctor</p>
+                          <p class="recommended"><i class="far fa-thumbs-up"></i> <FaRegThumbsUp/> Recommend </p>
                           <p class="comment-content">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -29,9 +30,7 @@ const Reviews = () => {
                             Curabitur non nulla sit amet nisl tempus
                           </p>
                           <div class="comment-reply">
-                            <a class="comment-btn" href="#">
-                            <FaReply/> Reply
-                            </a>
+                            
                             <p class="recommend-btn">
                               <span>Recommend?</span>
                               <a href="#" class="like-btn">

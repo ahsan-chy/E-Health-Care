@@ -116,7 +116,7 @@ width: 100% !important;
     margin-bottom: 0;
 }
 .circle-graph1{
-    background-image: url("/public/images/image.png");
+    background-image: url("/public/images/image3.png");
     height: 121px;
     width: 121px;
     background-size: 100% 100%;
@@ -696,6 +696,36 @@ p {
 }}
 
 /* Profile Editing */
+.form-head h2{
+    font-weight: 600;
+    color: var(--green-clr);
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.change-photo-btn{
+    background-color: var(--orange-clr);
+    border-radius: 50px;
+    color: #fff !important;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 15px;
+    position: relative;
+    transition: 0.3s;
+    text-align: center;
+    width: 220px;
+}
+.upload{
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 .profile-edit-tab{
     background-color: #fff;
     border: 1px solid #f0f0f0;
@@ -704,6 +734,21 @@ p {
     overflow: hidden;
     padding: 1.5rem 1.5rem 2.5rem ;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.025)!important;
+}
+.upload-btn{
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 30px;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #E5F1FB;
+    background-color: var(--green-clr) !important;
+    cursor: pointer;
+}
+.upload-btn:hover{
+    color: #fff;
+    background-color: var(--dark-green-clr) !important;
 }
 .basic-info .input-sec-1{
     padding-right: 6px ;

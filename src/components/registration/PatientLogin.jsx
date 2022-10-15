@@ -76,7 +76,7 @@ const PatientLogin = () => {
                         Login 
                         </button>
                     </div>
-                    <div className="col-md-6 px-1 my-3">
+                    {/* <div className="col-md-6 px-1 my-3">
                         <button 
                         className="mt-3 w-100 btn text-white"
                         type="submit"
@@ -91,7 +91,7 @@ const PatientLogin = () => {
                         style={{backgroundColor:'#DD4B39'}}
                         > <RiGoogleFill /> Gmail 
                         </button>
-                    </div>
+                    </div> */}
                 </form>
                     <div className='text-center mt-2'>
                       <p> Don’t have an account? 

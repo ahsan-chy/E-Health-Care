@@ -5,7 +5,7 @@ import "../docterdashboard.css"
 
 const SideNav = () => {
   return (
-    <div class="nav flex-column nav-pills my-side-nav">
+    <div className="nav flex-column nav-pills my-side-nav">
         <div className='side-bar'>
         <ul className="navbar-nav">
             <li>
