@@ -1,16 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { RiGoogleFill, RiFacebookFill } from "react-icons/ri";
 import "./form.css"
 
 const PatientRegistration = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-  }
-  console.log(errors); 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [password, setPassword] = useState("");
+    const [role, setRole] = useState("patient");
+    const [error, setError] = useState(null);
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        const patients = {
+          name,
+          email,
+          phone,
+          password,
+          role
+        };
+
+    const response = await fetch("http://localhost:5501/api/users", {
+        method: "POST",
+        body: JSON.stringify(patients),
+        headers: {
+            "Content-Type": "application/json",
+        },
+        });
+        const json = await response.json();
+        if (!response.ok) {
+        setError(json.error);
+        }
+        if (response.ok) {
+        setError(null);
+        setName("");
+        setEmail("");
+        setPhone("");
+        setPassword("");
+        console.log("Patient Record added:", json);
+        }
+        console.log(patients);
+    };
   return (
     <div className='container'>
         <div className="row">
@@ -30,78 +63,53 @@ const PatientRegistration = () => {
                             <h6 className=" text-end"><Link className=" text-decoration-none" to="/DrsRegistration"  style={{color:'#ff9600'}}>Are you a Doctor ?</Link></h6>
                         </div>
                     </div>
-                    <form onSubmit={handleSubmit(onSubmit)} className="row needs-validation" noValidate>
+                    <form onSubmit={handleSubmit} className="row needs-validation" noValidate>
 
                     <div className="row px-1">
                     <label htmlFor="fullName" className="form-label " style={{color:'#0E8A8A'}}> Full Name  </label>
                         <input 
                         type="text"
-                        id="fullname"
-                        name="fullname" 
-                        className={ errors.fullname ? "form-control is-invalid" : "form-control" }
-                        {...register("fullname",  { required: {value: true, message: "Enter Name"}, 
-                        maxLength: {value:20, message: "Name should no longer then 20 characters"},
-                        })} 
+                        name="name" 
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        className="form-control"
+                        required
                         />
-
-                        {errors.fullname && ( 
-                            <div className="invalid-feedback">
-                            {errors.fullname.message}
-                            </div>
-                            )}
                     </div>
 
                     <div className="row px-1 mt-3">
                     <label htmlFor="phone" className="form-label " style={{color:'#0E8A8A'}}> Phone Number </label>
                         <input 
                         type="tel"
-                        id="phone"
                         name="phone" 
-                        {...register("phone", { required: {value: true, message: "Enter Phone No"},} )} 
-                        className={ errors.phone ? "form-control is-invalid" : "form-control" }
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        className="form-control"
+                        required
                         />
-                        {errors.phone && (
-                        <div className="invalid-feedback">
-                            {errors.phone.message}
-                        </div>
-                        )
-                        }
-
                     </div>
 
                     <div className="row px-1 mt-3">
                         <label htmlFor="email" className="form-label " style={{color:'#0E8A8A'}}>E-Mail</label>
                         <input 
                         type="email"
-                        id="email"
+                        value={email}
                         name="email"
-                        {...register("email",  { required: {value: true, message:"Enter Email"}, 
-                        pattern: {value: /^\S+@\S+$/i, message: "The email address you entered is not valid.", },
-                        })} 
-                        className={ errors.email ? "form-control is-invalid" : "form-control" } 
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="form-control"
+                        required
                         />
-                        {errors.email &&(
-                        <div className="invalid-feedback">
-                            {errors.email.message}
-                            </div>
-                        )}
                     </div>
                     <div className="px-1 mt-3">
                         <label htmlFor="password" className="form-label " style={{color:'#0E8A8A'}}>Password</label>
                         <input 
                         type="password"
-                        id="password"
+                        value={password}
                         name="password" 
-                        {...register("password",  { required: {value: true, message: "Enter Password"} })}
-                        className={ errors.phone ? "form-control is-invalid" : "form-control" } 
+                        onChange={(e) => setPassword(e.target.value)}
+                        className="form-control"
+                        required
                         />
-                        {
-                        errors.password && (
-                            <div className="invalid-feedback">
-                            {errors.password.message}
-                            </div>
-                        )
-                        }
                     </div>
                     
                     <div className="row px-1 mt-3">

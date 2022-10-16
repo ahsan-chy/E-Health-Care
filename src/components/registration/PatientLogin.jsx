@@ -1,16 +1,54 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { RiGoogleFill, RiFacebookFill } from "react-icons/ri";
 import "./form.css"
 
 const PatientLogin = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-  }
-  console.log(errors); 
+    const email = useRef(null);
+    const password = useRef(null);
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        login({
+            email:email.current.value,
+            password:password.current.value
+        })
+    }
+    const login = async (user) => {
+        // debugger
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify(user)
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+        };
+        
+        fetch(`http://localhost:5501/api/login`, requestOptions)
+            .then(response => response.text())
+            .then(result => {
+                let response = JSON.parse(result)
+                console.log(result);
+                console.log("response", response);
+                if(response.message == "success" ){
+                    localStorage.setItem('userName', response.user.name);
+                    localStorage.setItem('email', response.user.email);
+                    localStorage.setItem('userRole', response.user.role);
+                    localStorage.setItem('isLoggedIn', true);
+                    // Navigate to Patient Dashboard
+                    window.open('PatientDashboard/patient', "_self");
+                }
+                else{
+                    alert(response.message)
+                }
+            })
+            .catch(error => {});
+    }
   return (
     <div className='container'>
         <div className="row">
@@ -30,7 +68,7 @@ const PatientLogin = () => {
                         <h6 className=" text-end"><Link className=" text-decoration-none" to="/DrsLogin"  style={{color:'#ff9600'}}>Login as Doctor ?</Link></h6>
                     </div>
                 </div>
-                    <form onSubmit={handleSubmit(onSubmit)} className="row needs-validation" noValidate>
+                    <form onSubmit={handleSubmit} className="row needs-validation" noValidate>
 
                     <div className="row px-1 mt-1">
                         <label htmlFor="email" className="form-label " style={{color:'#0E8A8A'}}>E-Mail</label>
@@ -38,16 +76,11 @@ const PatientLogin = () => {
                         type="email"
                         id="email"
                         name="email"
-                        {...register("email",  { required: {value: true, message:"Enter Email"}, 
-                        pattern: {value: /^\S+@\S+$/i, message: "The email address you entered is not valid.", },
-                        })} 
-                        className={ errors.email ? "form-control is-invalid" : "form-control" } 
+                        className="form-control"
+                        required
+                        ref={email}
                         />
-                        {errors.email &&(
-                        <div className="invalid-feedback">
-                            {errors.email.message}
-                            </div>
-                        )}
+                        
                     </div>
                     <div className="px-1 mt-3">
                         <label htmlFor="password" className="form-label " style={{color:'#0E8A8A'}}>Password</label>
@@ -55,16 +88,11 @@ const PatientLogin = () => {
                         type="password"
                         id="password"
                         name="password" 
-                        {...register("password",  { required: {value: true, message: "Enter Password"} })}
-                        className={ errors.phone ? "form-control is-invalid" : "form-control" } 
+                        className="form-control" 
+                        required
+                        ref={password}
                         />
-                        {
-                        errors.password && (
-                            <div className="invalid-feedback">
-                            {errors.password.message}
-                            </div>
-                        )
-                        }
+                        
                     </div>
                     
                     <div className="row px-1 mt-3">

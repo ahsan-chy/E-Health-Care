@@ -31,7 +31,7 @@ const Footer = () => {
                 {/* Links */}
                 <h6 className="text-uppercase fw-bold mb-4">For Docters </h6>
                 <p>
-                  <FaAngleRight/><Link to="/" className="text-reset">Appointments</Link>
+                  <FaAngleRight/><Link to="/DoctorDashboard/appointments" className="text-reset">Appointments</Link>
                 </p>
                 <p>
                   <FaAngleRight/><Link to="/DrsLogin" className="text-reset">Login</Link>
@@ -39,9 +39,14 @@ const Footer = () => {
                 <p>
                   <FaAngleRight/><Link to="/DrsRegistration" className="text-reset">Register</Link>
                 </p>
-                <p>
+                {/* {
+                  localStorage.getItem("userRole") !== "patient" && ( */}
+                    <p>
                   <FaAngleRight/><Link to="/DoctorDashboard/dashboard" className="text-reset">Docter Dashboard</Link>
                 </p>
+                  {/* )
+                } */}
+                
               </div>
               {/* Grid column */}
               {/* Grid column */}
@@ -51,16 +56,16 @@ const Footer = () => {
                   For Patients
                 </h6>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Search fo Docters</a>
+                  <FaAngleRight/><Link to="/Doctor" className="text-reset">Search fo Docters</Link>
                 </p>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Login</a>
+                  <FaAngleRight/><Link to="/PatientsLogin" className="text-reset">Login</Link>
                 </p>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Register</a>
+                  <FaAngleRight/><Link to="/PatientsRegistration" className="text-reset">Register</Link>
                 </p>
                 <p>
-                  <FaAngleRight/><a href="#!" className="text-reset">Patient Dashboard</a>
+                  <FaAngleRight/><Link to="/PatientDashboard/patient" className="text-reset">Patient Dashboard</Link>
                 </p>
               </div>
               {/* Grid column */}
