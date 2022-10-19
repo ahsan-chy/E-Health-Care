@@ -1,20 +1,21 @@
 import React from 'react'
 import './success.css'
 import { FaStar , FaCheck } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Success() {
   return (
-    <div>
+    <div className='mt-5'>
     <div className="content success-page-cont">
     <div className="container-fluid">
     <div className="row justify-content-center">
     <div className="col-lg-6"><div className="card success-card">
     <div className="card-body"><div className="success-cont">
     <FaCheck className="i"/><h3>Appointment booked Successfully!</h3>
-    <p>Appointment booked with <strong>Dr. Darren Elder</strong>
-    <br/> on <strong>12 Nov 2019 5:00PM to 6:00PM</strong></p>
-    <a className="btn btn-primary view-inv-btn" href="/template-psychiatrist/pages/invoice-view">
-    View Invoice</a>
+    <p>Appointment booked with <strong>Dr. Sadia Ahmad</strong>
+    <br/> at <strong>17 Nov 2022 12:00PM </strong></p>
+    <Link className="btn btn-primary view-inv-btn" to="/PatientDashboard/favourites">
+    Back to Profile</Link>
     </div>
     </div>
     </div>

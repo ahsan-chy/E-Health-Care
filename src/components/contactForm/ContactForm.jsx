@@ -75,7 +75,7 @@ const ContactForm = () => {
                   </div>
                   <div className="infor-details text-center">
                     <label class="head-text">Location</label>
-                    <p>  Virtual Medical Center Jauharabad</p>
+                    <p>  22A, Civil Line Jauharabad</p>
                   </div>
                 </div>
               </div>

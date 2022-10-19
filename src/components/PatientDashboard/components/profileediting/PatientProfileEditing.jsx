@@ -6,15 +6,9 @@ const ProfileEditing = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [gender, setGender] = useState("");
-  const [specialization, setSpecialization] = useState("");
   const [address, setAddress] = useState("");
-  const [about, setAbout] = useState("");
-  const [qualification, setQualification] = useState("");
-  const [experience, setExperience] = useState("");
-  const [clinicLocation, setClinicLocation] = useState("");
-  const [fee, setFee] = useState("");
+  const [age, setAge] = useState("");
   const [picture, setPicture] = useState("");
-  const [services, setServices] = useState("");
   const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
@@ -26,13 +20,7 @@ const ProfileEditing = () => {
       phone,
       gender,
       address,
-      specialization,
-      about,
-      qualification,
-      experience,
-      clinicLocation,
-      services,
-      fee,
+      age,
       picture,
     };
 
@@ -54,14 +42,7 @@ const ProfileEditing = () => {
       setPhone("");
       setGender("");
       setAddress("");
-      setSpecialization("");
-      setAbout("");
-      setQualification("");
-      setExperience("");
-      setClinicLocation("");
-      setFee("");
       setPicture("");
-      setServices("");
       console.log("Doctor Record added:", json);
     }
     console.log(doctors);
@@ -126,7 +107,7 @@ const ProfileEditing = () => {
               </div>
             </div>
 
-            <div className="col-md-12">
+            <div className="col-md-6">
               <div className="form-group">
                 <label className="head-text">Address </label>
                 <textarea
@@ -137,7 +118,20 @@ const ProfileEditing = () => {
                 />
               </div>
             </div>
-            <div className="col-md-12 mb-3">
+            <div className="col-md-6 input-sec-2">
+              <div className="form-group">
+                <label className="head-text">Age </label>
+                <input
+                  type="number"
+                  name="age"
+                  value={age}
+                  className="form-control"
+                  onChange={(e) => setAge(e.target.value)}
+                />
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-3">
               <div className="form-group change-photo-btn">
                 <label className="head-text text-white">Upload Image </label>{" "}
                 &nbsp;&nbsp;
@@ -152,86 +146,9 @@ const ProfileEditing = () => {
                 />
               </div>
             </div>
+            
           </div>
 
-          <div className="row basic-info">
-            <div className="form-head mt-3">
-              <h2>Other Details</h2>
-            </div>
-
-            <div className="col-md-12">
-              <div className="form-group">
-                <label className="head-text">About </label>
-                <textarea
-                  className="form-control"
-                  name="about"
-                  onChange={(e) => setAbout(e.target.value)}
-                  rows="2"
-                  value={about}
-                />
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="form-group">
-                <label className="head-text">Education/ Qualification </label>
-                <input
-                  type="text"
-                  name="qualification"
-                  value={qualification}
-                  className="form-control"
-                  onChange={(e) => setQualification(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="form-group">
-                <label className="head-text">Specialization </label>
-                <input
-                  type="text"
-                  name="specialization"
-                  value={specialization}
-                  className="form-control"
-                  onChange={(e) => setSpecialization(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="form-group">
-                <label className="head-text">Experience </label>
-                <input
-                  type="text"
-                  name="experience"
-                  value={experience}
-                  className="form-control"
-                  onChange={(e) => setExperience(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="form-group">
-                <label className="head-text">Hospital Location </label>
-                <input
-                  type="text"
-                  name="clinicLocation"
-                  value={clinicLocation}
-                  className="form-control"
-                  onChange={(e) => setClinicLocation(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="form-group">
-                <label className="head-text">Fee/ Charges </label>
-                <input
-                  type="number"
-                  name="Fee"
-                  value={fee}
-                  className="form-control"
-                  onChange={(e) => setFee(e.target.value)}
-                />
-              </div>
-            </div>
-          </div>
 
           <button className="btn upload-btn" type="submit">
             Submit Changes

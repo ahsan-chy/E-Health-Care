@@ -1,0 +1,12 @@
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+    background-color: var(--green-clr);
+    border: 1px solid var(--green-clr);
+    border-radius: 3px !important;
+}
+.react-datetime-picker__wrapper{
+    border-radius: 3px;
+    padding: 3px 2px;
+    background-color: white;
+    border-color: #63636d4a;
+}

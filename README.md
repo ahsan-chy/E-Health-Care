@@ -1,15 +1,10 @@
-# React JS Medium Level Folder Structure
+# E-Health-Care System
 
-In the project directory, you can run:
-### `npm start`
+### This project include following features:
 
-
-## Folders include
-### `Components`
-### `Pages`
-### `db`
-### `Services`
-### `ApiIntercepter`
-### `Module`
-### `Routes`
-
+- Login/Register system for `Doctor`, `Patient`
+- Doctor/Admin/Patient Dashboards
+- Search & Filter Doctors
+- Receive Prescription on Email
+- Patient can send Feedback about Doctor 
+- Email response when interact with forms.

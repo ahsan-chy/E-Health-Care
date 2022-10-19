@@ -13,7 +13,8 @@ import Checkout from "../components/checkout/Checkout";
 import Success from "../components/success/Success";
 import PatientDashboard from "../components/PatientDashboard/pages/PatientDashboard";
 import {Favourites, Patient, PatientChangePassword, PatientProfileEditing, } from "../components/PatientDashboard/components";
-
+import AdminDashboard from "../components/AdminDashboard/pages/AdminDashboard"
+import { Admin, DoctorTable, PatientTable, Specialities, Transaction } from "../components/AdminDashboard/components";
 
 const Routers = () => {
   return (
@@ -51,11 +52,23 @@ const Routers = () => {
         {/* Patient's Routes */}
         <Route path="/PatientDashboard/" element={<PatientDashboard />}>
           <Route path="patient" element={<Patient/>}/>
-        <Route path="favourites" element={<Favourites/>} />
+          <Route path="favourites" element={<Favourites/>} />
           <Route path="patientprofileedit" element={<PatientProfileEditing/>}/>
           <Route path="patientchangepassword" element={<PatientChangePassword/>}/>
         </Route>
         
+        {/* Admin Routes */}
+        <Route path="/admindashboard/" element={<AdminDashboard />}>
+          <Route path="admin" element={<Admin/>}/>
+          <Route path="specialities" element={<Specialities />} />
+          <Route path="doctorrecord" element={<DoctorTable />} />
+          <Route path="patientrecord" element={<PatientTable />} />
+          <Route path="transaction" element={<Transaction />} />
+        </Route>
+
+
+
+
         <Route path="/sendreview" element={<Review />} />
         <Route path="/prescription" element={<Prescription/>} />
 

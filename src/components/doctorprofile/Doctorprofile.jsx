@@ -2,6 +2,7 @@ import React from 'react';
 import './doctorprofile.css';
 import { FaRegDotCircle, FaRegComment, FaRegBookmark, FaPhoneAlt, FaVideo, FaMapMarkerAlt, 
   FaRegMoneyBillAlt, FaRegThumbsUp, FaMicroscope, FaStopwatch, FaStar, FaRegStar, FaBrain, FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Doctorprofile = ({drDetails}) => {
@@ -73,8 +74,8 @@ const Doctorprofile = ({drDetails}) => {
               <div className="dr-details">
                 <h6 style={{color:"#63636D"}}><FaRegThumbsUp  style={{color:"#0E8A8A"}}/> &nbsp; 99%</h6>
                 <h6 style={{color:"#63636D"}}><FaRegComment  style={{color:"#0E8A8A"}}/> &nbsp; 35 Feedback</h6>
-                <h6 style={{color:"#63636D"}}><FaMapMarkerAlt  style={{color:"#0E8A8A"}}/> &nbsp; Sargodha DHA</h6>
-                <h6 style={{color:"#63636D"}}><FaRegMoneyBillAlt  style={{color:"#0E8A8A"}}/> &nbsp; RS. 1000 </h6>
+                <h6 style={{color:"#63636D"}}><FaMapMarkerAlt  style={{color:"#0E8A8A"}}/> &nbsp;Civil Line Jauharabad</h6>
+                <h6 style={{color:"#63636D"}}><FaRegMoneyBillAlt  style={{color:"#0E8A8A"}}/> &nbsp; RS. 1500 </h6>
               </div>
               <div className="save-icons text-center ">
                 <div className="border"><FaRegBookmark className='single-icon'/></div>
@@ -83,7 +84,9 @@ const Doctorprofile = ({drDetails}) => {
                 <div className="border"><FaVideo className='single-icon'/></div>
               </div>
 
-              <button className='btn text-white' style={{backgroundColor:"#FF9600"}}>Book Appointement</button>
+              <Link className='btn text-white' style={{backgroundColor:"#FF9600"}} to="/booking">
+                Book Appointement
+                </Link>
             </div>
           </div>
 
@@ -201,20 +204,11 @@ const Doctorprofile = ({drDetails}) => {
                   <div className="row py-4">
                     <div className="col-lg-6 pe-5">
                       <h5 className='pb-2'>Civil Hospital Jauharabad</h5>
-                      <h6 style={{color:"#63636D"}}><FaMapMarkerAlt  style={{color:"#0E8A8A"}}/> &nbsp; 77JQ+GFX, Jauharabad, Khushab, Punjab, Pakistan </h6>
+                      <h6 style={{color:"#63636D"}}><FaMapMarkerAlt  style={{color:"#0E8A8A"}}/> &nbsp; 22A, Civil Line Jauharabad </h6>
                       <div className='map-location mt-4'>
                         <p className='m-5 p-5 text-danger'> map will be Here</p>
                       </div>  
                     </div>
-                    <div className="col-lg-4">
-                      <strong>Mon-Sat</strong>
-                      <p className='pt-2'>10:00 AM - 2:00 PM</p>
-                      <p>10:00 AM - 2:00 PM</p>
-                      </div>
-                    <div className="col-lg-2">
-                      <strong> FEE: &nbsp; </strong>
-                      <span> $300</span>
-                      </div>
                   </div>
                 </div>
               </div>
@@ -285,41 +279,41 @@ const Doctorprofile = ({drDetails}) => {
                 <thead>
                   <tr>
                     <th scope="col"> 
-                        <h6 style={{color:"#0E8A8A"}}><FaMapMarkerAlt/> &nbsp;Available Tomorrow</h6>
+                        <h6 style={{color:"#0E8A8A"}}><FaMapMarkerAlt/> &nbsp;Available Hours</h6>
                     </th>
-                    <th scope="col">01:00 PM</th>
+                    <th scope="col">08:00 AM</th>
                     <th scope="col">10:00 PM</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">Monday</th>
-                    <td>01:00 PM</td>
+                    <td>08:00 AM</td>
                     <td>10:00 PM</td>
                   </tr>
                   <tr>
                     <th scope="row">Tuesday</th>
-                    <td>01:00 PM</td>
+                    <td>08:00 AM</td>
                     <td>10:00 PM</td>
                   </tr>
                   <tr>
                     <th scope="row">Wednesday</th>
-                    <td>01:00 PM</td>
+                    <td>08:00 AM</td>
                     <td>10:00 PM</td>
                   </tr>
                   <tr>
                     <th scope="row">Thursday</th>
-                    <td>01:00 PM</td>
+                    <td>08:00 AM</td>
                     <td>10:00 PM</td>
                   </tr>
                   <tr>
                     <th scope="row">Friday</th>
-                    <td>01:00 PM</td>
+                    <td>08:00 AM</td>
                     <td>10:00 PM</td>
                   </tr>
                   <tr>
                     <th scope="row">Saturday</th>
-                    <td>01:00 PM</td>
+                    <td>08:00 AM</td>
                     <td>10:00 PM</td>
                   </tr>
                   <tr>

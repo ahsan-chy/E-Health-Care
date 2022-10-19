@@ -32,7 +32,7 @@ const Dashboard = () => {
                           <div class="dash-widget-info">
                             <h6>Today Patient</h6>
                             <h3>3</h3>
-                            <p class="text-muted">06, Sep 2022</p>
+                            <p class="text-muted">17, Sep 2022</p>
                           </div>
                         </div>
                       </div>
@@ -46,7 +46,7 @@ const Dashboard = () => {
                           <div class="dash-widget-info">
                             <h6>Appoinments</h6>
                             <h3>3</h3>
-                            <p class="text-muted">06, Apr 2022</p>
+                            <p class="text-muted">17, Sep 2022</p>
                           </div>
                         </div>
                       </div>
@@ -88,11 +88,37 @@ const Dashboard = () => {
                                     <tr>
                                       <td>
                                         <h2 class="table-avatar">
-                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/patient.jpg" alt="User Image" /></a>
-                                          <a href="patient-profile.html">Nicolas Flowers <span>#PT0016</span></a>
+                                          <a href="patient-profile.html" class="avatar avatar-sm me-2">
+                                            <img class="avatar-img rounded-circle" src="/images/p3.jpg" alt="User Image" /></a>
+                                          <a href="patient-profile.html">Ahmed But  </a>
                                         </h2>
                                       </td>
-                                      <td>11 Sep 2022 <span class="d-block text-info">10.00 AM</span></td>
+                                      <td>17 Sep 2022 <span class="d-block text-info">10.00  PM</span></td>
+                                      <td>Fever</td>
+                                       
+                                      <td class="text-center">2000</td>
+                                      <td class="text-end">
+                                        <div class="table-action">
+                                          <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                            <FaEye/> View
+                                          </a>
+                                          <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                           <FaCheck/> Accept
+                                          </a>
+                                          <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                            <FaTimes/> Cancel
+                                          </a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <h2 class="table-avatar">
+                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/p5.jpg" alt="User Image" /></a>
+                                          <a href="patient-profile.html">Aftab   </a>
+                                        </h2>
+                                      </td>
+                                      <td>17 Sep 2022 <span class="d-block text-info">06.00  PM</span></td>
                                       <td>General</td>
                                        
                                       <td class="text-center">2000</td>
@@ -113,36 +139,11 @@ const Dashboard = () => {
                                     <tr>
                                       <td>
                                         <h2 class="table-avatar">
-                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/patient.jpg" alt="User Image" /></a>
-                                          <a href="patient-profile.html">Nicolas Flowers <span>#PT0016</span></a>
+                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/p4.jpg" alt="User Image" /></a>
+                                          <a href="patient-profile.html">Faizan  </a>
                                         </h2>
                                       </td>
-                                      <td>11 Sep 2022 <span class="d-block text-info">10.00 AM</span></td>
-                                      <td>General</td>
-                                       
-                                      <td class="text-center">2000</td>
-                                      <td class="text-end">
-                                        <div class="table-action">
-                                          <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-                                            <FaEye/> View
-                                          </a>
-                                          <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-                                           <FaCheck/> Accept
-                                          </a>
-                                          <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-                                            <FaTimes/> Cancel
-                                          </a>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <h2 class="table-avatar">
-                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/patient.jpg" alt="User Image" /></a>
-                                          <a href="patient-profile.html">Nicolas Flowers <span>#PT0016</span></a>
-                                        </h2>
-                                      </td>
-                                      <td>11 Sep 2022 <span class="d-block text-info">10.00 AM</span></td>
+                                      <td>17 Sep 2022 <span class="d-block text-info">08.00  PM</span></td>
                                       <td>General</td>
                                        
                                       <td class="text-center">2000</td>
@@ -184,24 +185,26 @@ const Dashboard = () => {
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    <tr>
+                                    
+                                  <tr>
                                       <td>
                                         <h2 class="table-avatar">
-                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/patient.jpg" alt="User Image" /></a>
-                                          <a href="patient-profile.html">Mark John <span>#PT0006</span></a>
+                                          <a href="patient-profile.html" class="avatar avatar-sm me-2">
+                                            <img class="avatar-img rounded-circle" src="/images/p3.jpg" alt="User Image" /></a>
+                                          <a href="patient-profile.html">Ahmed But  </a>
                                         </h2>
                                       </td>
-                                      <td>14 Sep 2022 <span class="d-block text-info">6.00 PM</span></td>
+                                      <td>17 Sep 2022 <span class="d-block text-info">10.00  PM</span></td>
                                       <td>Fever</td>
-                                      
-                                      <td class="text-center"> 1500</td>
+                                       
+                                      <td class="text-center">2000</td>
                                       <td class="text-end">
                                         <div class="table-action">
                                           <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-                                          <FaEye/> View
+                                            <FaEye/> View
                                           </a>
                                           <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-                                            <FaCheck/> Accept
+                                           <FaCheck/> Accept
                                           </a>
                                           <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
                                             <FaTimes/> Cancel
@@ -212,46 +215,21 @@ const Dashboard = () => {
                                     <tr>
                                       <td>
                                         <h2 class="table-avatar">
-                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/patient.jpg" alt="User Image" /></a>
-                                          <a href="patient-profile.html">Danny Grizzle <span>#PT0006</span></a>
+                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/p5.jpg" alt="User Image" /></a>
+                                          <a href="patient-profile.html">Aftab   </a>
                                         </h2>
                                       </td>
-                                      <td>14 Sep 2022 <span class="d-block text-info">5.00 PM</span></td>
-                                      <td>General</td>
-                                      
-                                      <td class="text-center"> 1500</td>
-                                      <td class="text-end">
-                                        <div class="table-action">
-                                          <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-                                          <FaEye/> View
-                                          </a>
-                                          <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-                                            <FaCheck/> Accept
-                                          </a>
-                                          <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-                                            <FaTimes/> Cancel
-                                          </a>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <h2 class="table-avatar">
-                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/patient.jpg" alt="User Image" /></a>
-                                          <a href="patient-profile.html">Erica Anderson <span>#PT0007</span></a>
-                                        </h2>
-                                      </td>
-                                      <td>14 Sep 2022 <span class="d-block text-info">3.00 PM</span></td>
+                                      <td>17 Sep 2022 <span class="d-block text-info">06.00 PM</span></td>
                                       <td>General</td>
                                        
-                                      <td class="text-center"> 1500</td>
+                                      <td class="text-center">2000</td>
                                       <td class="text-end">
                                         <div class="table-action">
                                           <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-                                          <FaEye/> View
+                                            <FaEye/> View
                                           </a>
                                           <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-                                            <FaCheck/> Accept
+                                           <FaCheck/> Accept
                                           </a>
                                           <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
                                             <FaTimes/> Cancel
@@ -259,6 +237,32 @@ const Dashboard = () => {
                                         </div>
                                       </td>
                                     </tr>
+                                    <tr>
+                                      <td>
+                                        <h2 class="table-avatar">
+                                          <a href="patient-profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="/images/p4.jpg" alt="User Image" /></a>
+                                          <a href="patient-profile.html">Faizan  </a>
+                                        </h2>
+                                      </td>
+                                      <td>17 Sep 2022 <span class="d-block text-info">08.00  PM</span></td>
+                                      <td>General</td>
+                                       
+                                      <td class="text-center">2000</td>
+                                      <td class="text-end">
+                                        <div class="table-action">
+                                          <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                            <FaEye/> View
+                                          </a>
+                                          <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                           <FaCheck/> Accept
+                                          </a>
+                                          <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                            <FaTimes/> Cancel
+                                          </a>
+                                        </div>
+                                      </td>
+                                    </tr>
+
                                   </tbody>
                                 </table>
                               </div>

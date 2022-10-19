@@ -14,13 +14,13 @@ const HealthCare = () => {
                     </div>
                     <div className="col-md-10 ps-0">
                         <h2>Health Care Center</h2>
-                        <p>If you have any Emergency by health problem contact this No. 1234556 or book Appointent</p>
+                        <p>If you have any Emergency by health problem contact Us Instanly</p>
                     </div>
                 </div>
             </div>
             <div className="col-md-3 py-3 ps-5 card-section">
                 <button className="btn">
-                    <Link className="find-btn" to="/Doctor">Find Doctor</Link>
+                    <Link className="find-btn" to="/ContactUs">Contact Us</Link>
                 </button>
             </div>
         </div>

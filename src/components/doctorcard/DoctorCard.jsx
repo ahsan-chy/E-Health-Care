@@ -85,7 +85,9 @@ function DoctorCard({doctors}) {
                         <button className='btn my-3 white-btn'>
                             <Link to ={`/DrProfile/${doc._id}`} className='btn-link'>View Profile</Link>
                         </button>
-                        <button className='btn text-white green-btn' >Book Appointement</button>
+                        <button className='btn green-btn' >
+                            <Link to="/booking" className='book-link' >Book Appointement</Link>
+                        </button>
                     
                     </div>
 
@@ -100,7 +102,7 @@ function DoctorCard({doctors}) {
                         <div className="card-body ">
                             <h6 style={{color:"#0E8A8A"}}><FaClinicMedical/> &nbsp; National Hospital (DHA)</h6>
                             <span className='text-secondary'><FaRegCalendarAlt/> Available tomorrow</span>
-                            <span className='mx-4'> <strong>Fee: </strong> RS: 3,000</span>
+                            <span className='mx-4'> <strong>Fee: </strong> RS: 1500</span>
                         </div>
                     </div>
                     </div>
@@ -109,7 +111,7 @@ function DoctorCard({doctors}) {
                         <div className="card-body">
                             <h6 style={{color:"#0E8A8A"}}><FaVideo/> &nbsp; Online Video Consultation (Online)</h6>
                             <span className='text-secondary'><FaRegCalendarAlt/> Available tomorrow</span>
-                            <span className='mx-4'> <strong>Fee: </strong> RS: 3,000</span>
+                            <span className='mx-4'> <strong>Fee: </strong> RS: 1500</span>
                         </div>
                     </div>
                     </div>

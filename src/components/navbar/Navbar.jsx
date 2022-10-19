@@ -28,7 +28,7 @@ function Navbar() {
             <FaPhoneAlt className="text-light mx-2" />
             <span className="text-light">
               {" "}
-              Contact Number: +923 068 952 339
+              Contact Number: +923 146 604 298
             </span>
             &nbsp;&nbsp;&nbsp;
             <FaMapMarkerAlt className="text-light mx-2" />

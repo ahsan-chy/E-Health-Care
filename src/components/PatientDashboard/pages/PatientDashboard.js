@@ -24,12 +24,11 @@ const PatientDashboard = () => {
               <div class="widget-profile pro-widget-content">
                 <div class="profile-info-widget">
                   <a href="#" class="booking-doc-img">
-                    <img src="/images/patient1.jpg" alt="User Image" />
+                    <img src="/images/p3.jpg" alt="User Image" />
                   </a>
                   <div class="profile-det-info">
-                    <h3>Dr. Mary Nielson</h3>
+                    <h3>Ahmed But</h3>
                     <div class="patient-details">
-                      <h5 class="mb-0">D.N.B. (Psychiatry)</h5>
                     </div>
                   </div>
                 </div>

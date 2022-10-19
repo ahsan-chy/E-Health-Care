@@ -41,7 +41,7 @@ const PatientLogin = () => {
                     localStorage.setItem('userRole', response.user.role);
                     localStorage.setItem('isLoggedIn', true);
                     // Navigate to Patient Dashboard
-                    window.open('PatientDashboard/patient', "_self");
+                    window.open('/PatientDashboard/favourites', "_self");
                 }
                 else{
                     alert(response.message)

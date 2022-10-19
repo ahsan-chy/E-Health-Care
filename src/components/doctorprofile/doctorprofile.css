@@ -50,7 +50,10 @@
 .map-location{
     width: 100%;
     height: 250px;
-    border: 1px solid rgb(158, 156, 156);
+    background-image:  url("/public/images/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .remarks{
     display: flex;
